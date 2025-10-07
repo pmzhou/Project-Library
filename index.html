@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Library</title>
+    <link href="./css/styled.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Project: Library</h1>
+
+    <button id="newBookBtn">+ New Book</button>
+
+  <dialog id="bookDialog">
+    <form id="bookForm">
+      <h2>Add a new book</h2>
+      <label>Title: <input type="text" id="title" required></label>
+      <label>Author: <input type="text" id="author" required></label>
+      <label>Pages: <input type="number" id="pages" min="1" required></label>
+      <label>
+        <input type="checkbox" id="read"> Already read?
+      </label>
+      <button type="submit">Add Book</button>
+      <button type="button" id="closeDialog">Cancel</button>
+    </form>
+  </dialog>
+
+  <div id="book-list"></div>
+
+    <script src="./js/scripted.js"></script>
+</body>
+</html>
